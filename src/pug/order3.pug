@@ -1,0 +1,164 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Оформление заказа
+
+            section.order.container.inner
+                h2.title Оформление заказа
+                .order__wrapper
+                    .order__destination
+                        p.order__title Как вы хотите получить заказ?
+                        ul.order__checkbox
+                            li
+                                input(type="radio" name="radio-destination" id="radio1")
+                                label(for="radio1") Забрать из магазина
+                            li
+                                input(type="radio" name="radio-destination" id="radio2" checked)
+                                label(for="radio2") Доставкой
+                        .order__list-wrapper
+                            .order__address 
+                                ul.order__address-row
+                                    li.order__col
+                                        p Забрать по адресу :
+                                    li
+                                        p Ростовская обл, Аксайский р-н, г Аксай, ул Донская, д 10, кв 99.
+                                        //- .order__map.order__map--laptop
+                                            //- img(src="img/map.png" alt="")
+                                        button.button#change-address Выбрать другой магазин
+                                ul.order__address-row 
+                                    li.order__time.order__time--mode
+                                        p.order__col Наличие в магазине:
+                                        p В наличии
+                            .order__map.order__map--desctop
+                                .address__map#map
+                                #result
+                        ul.order__list
+                            li.order__col
+                                p.order__title Покупатель:
+                            li.order__inputs
+                                input(type="text" placeholder="Имя")
+                                input(type="text" placeholder="Номер телефона")
+                                input(type="text" placeholder="Email")
+                        .order__dop-sale
+                            input(type="checkbox" id="check1")
+                            label(for="check1")  ДОПОЛНИТЕЛЬНАЯ СКИДКА 5% ПРИ ЗАКАЗЕ
+                        p.order__title Способы оплаты
+                        ul.order__list.order__checkbox
+                            li
+                                input(type="radio" name="order-pay" id="radio3")
+                                label(for="radio3") При получении картой или наличными
+                            li 
+                                input(type="radio" name="order-pay" id="radio4" checked)
+                                label(for="radio4") Онлайн оплата
+
+                    .order__information 
+                        p.order__title Ваш заказ
+                        ul.order__items 
+                            li.order__item 
+                                .order__picture 
+                                    img(src="img/order/image27.png" alt="")
+                                ul.order__item-list 
+                                    li.order__item-title
+                                        p Золотое кольцо с бриллиантом
+                                    li.order__article
+                                        p Артикул:
+                                        p 
+                                            span 123456
+                                    li
+                                        p Вес изделия:
+                                        p 
+                                            span 999 г
+                                    li
+                                        p Размер&nbsp;
+                                        p 
+                                            span 22
+                                    li
+                                        p Вставка:
+                                        p 
+                                            span Бриллиант
+                            li.order__item 
+                                .order__picture 
+                                    img(src="img/order/image27.png" alt="")
+                                ul.order__item-list 
+                                    li.order__item-title
+                                        p Золотое кольцо с бриллиантом
+                                    li
+                                        p Артикул:
+                                        p 
+                                            span 123456
+                                    li.order__article
+                                        p Вес изделия:
+                                        p 
+                                            span 999 г
+                                    li
+                                        p Размер&nbsp;
+                                        p 
+                                            span 22
+                                    li
+                                        p Вставка:
+                                        p 
+                                            span Бриллиант
+
+                        ul.order__information-list 
+                            li
+                                p Скидка по карте
+                            li
+                                p — 500 ₽
+                            li
+                                p Название скидки 2
+                            li
+                                p — 500 ₽
+                            li
+                                p Название скидки 3
+                            li
+                                p — 380 ₽
+                            li
+                                p Будет начислено бонусов
+                            li
+                                p 638 ₽
+                            li.order__delivery
+                                p Стоимость доставки
+                            li.order__delivery
+                                p 999 ₽
+                            li.order__total
+                                p Стоимость заказа 
+                            li.order__total
+                                p 6 380 ₽
+
+                        p.order__address-delivery Адрес доставки: Ростовская обл, Аксайский р-н, г Аксай, ул Донская, д 10 кв 99. 24 июня, четверг, 9:00 — 18:00
+                        ul.order__method 
+                            li
+                                p Способ оплаты
+                            li
+                                p Онлайн оплата
+
+                        button.button.order__button(type="submit") Оформить и оплатить
+
+
+
+
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+        include modules/choos-address.pug
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="js/icon_customImage.js" type="text/javascript")
+        script(src="js/mapbasics.js" type="text/javascript")
+        script(src="js/input_validation.js" type="text/javascript")

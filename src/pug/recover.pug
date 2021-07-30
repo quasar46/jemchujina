@@ -1,0 +1,33 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main.bg-jemchug
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Личный кабинет
+
+            section.recover.container.inner
+                h2.title.recover__title Восстановить пароль
+                p.recover__text Введите свой адрес электронной почты<i class="br"></i> и мы отправим вам инструкцию по восстановлению пароля
+                form.recover__form(action="get")
+                    .recover__inputs
+                        input.recover__input(type="email" placeholder="Ваш email")
+
+                    button.button.button__recover Отправить 
+
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug

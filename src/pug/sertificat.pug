@@ -1,0 +1,51 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Подарочные сертификаты
+
+            section.cards
+                h2.title Подарочные сертификаты
+                .cards__wrapper.container.inner 
+                    .cards__aside 
+                        .cards__content
+                            p.cards__caption В ювелирной сети «Фамильная Жемчужина» всегда в продаже подарочные сертификаты номиналом 1000, 3000, 5000 и 10 000 рублей.
+                            p Если вы не знаете, что подарить дорогому человеку, то подарочный сертификат — лучшее решение. Вы сохраните магию волшебства и поможете осуществить драгоценные желания дорого вам человека!
+                    .cards__picture
+                        img(src="img/cards/img2.png" alt="")
+
+                ul.cards-list.cards-list--mode.container.inner.cards-slick
+                    li.cards-list__item 
+                        p Подарочный сертификат предоставляет владельцу право на приобретение любых товаров в сети салонов «Фамильная Жемчужина» на сумму, эквивалентную номиналу подарочного сертификата.
+                        p Срок действия сертификата — 2 года с момента приобретения сертификата.
+                    li.cards-list__item 
+                        p Сертификат действителен только при его предъявлении. Любые дополнительные скидки не действуют при покупке сертификата.
+                        p Если стоимость товара, выбранная предъявителем сертификата, выше номинала, то сумма разницы подлежит доплате.
+                    li.cards-list__item 
+                        p Магазины не несут ответственность за несанкционированное использование подарочного сертификата, поскольку он является предъявительским и не требует устанавливать личность покупателя. 
+                        p Подарочный сертификат в случае утери не восстанавливается. 
+                    li.cards-list__item 
+                        p В случае выявления заводского брака, возврат товара, приобретённого по сертификату, производится только в магазине, в котором произошла покупка товара по сертификату.
+
+
+
+
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+    include modules/footer.pug
+    include modules/menu.pug
+    include modules/script.pug

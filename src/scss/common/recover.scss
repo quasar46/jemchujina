@@ -1,0 +1,130 @@
+.recover__text {
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 30px;
+  .br {
+    display: block;
+  }
+  @media (max-width: 1279px) {
+    font-size: 22px;
+  }
+  @media (max-width: 1023px) {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.recover__title {
+  margin-bottom: 110px;
+  @media (max-width: 1919px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 1279px) {
+    margin-bottom: 70px;
+  }
+  @media (max-width: 1023px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}
+
+.recover__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--mode {
+    flex-direction: row;
+  }
+}
+
+.recover__input {
+  height: 52px;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  width: 100%;
+  margin-right: 0;
+
+  &::placeholder {
+    color: $color-grey;
+  }
+  @media (max-width: 1023px) {
+    height: 41px;
+    font-size: 14px;
+  }
+  &--mode {
+    max-width: 408px;
+    width: 100%;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+      @media (max-width: 767px) {
+        margin-right: auto;
+      }
+    }
+    @media (max-width: 1023px) {
+      max-width: 280px;
+      margin-right: 15px;
+      height: 41px;
+    }
+  }
+  @media (max-width: 767px) {
+    margin: auto;
+    margin-bottom: 15px;
+    max-width: 320px;
+  }
+}
+
+.recover__inputs {
+  width: 100%;
+  max-width: 552px;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 767px) {
+    max-width: 320px;
+    width: 100%;
+  }
+  &--mode {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+  // input {
+  //   // max-width: 408px;
+  //   // width: 100%;
+  //   &:nth-child(2) {
+  //     margin-left: 30px;
+  //     @media (max-width: 1023px) {
+  //       margin-left: 15px;
+  //     }
+  //   }
+  // }
+}
+
+.button__recover {
+  align-self: center;
+  @media (max-width: 767px) {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+.recover__ask {
+  font-size: 14px;
+  color: $color-grey;
+  margin-top: 40px;
+  @media (max-width: 1023px) {
+    margin-top: 20px;
+  }
+}

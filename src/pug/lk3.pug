@@ -1,0 +1,182 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Личный кабинет
+            section.lk.container.inner
+                h2.title Личный кабинет
+                .lk__wrapper 
+                    ul.lk__list 
+                        li
+                            a(href="lk.html") Профиль
+                        li
+                            a(href="lk2.html").active Заказы
+                        li
+                            a(href="index.html") Выход
+                    .lk__content.lk__content--mode.active
+                        .order-lk 
+                            .order-lk__header 
+                                .order-lk__items
+                                    .order-lk__item
+                                        p Номер заказа
+                                        p.order-lk__value 999
+                                    .order-lk__item
+                                        p Дата заказа
+                                        p.order-lk__value 14.07.2021
+                                    .order-lk__item
+                                        p Стоимость
+                                        p.order-lk__value.order-lk__value--mode 9 999 ₽
+                                    .order-lk__item
+                                        p Статус заказа
+                                        p.order-lk__value.order-lk__value--mode Ожидает в магазине
+                                .order-lk__buttons
+                                    button.button 
+                                        span Повторить заказ
+                                    button.button.button--mode.order-lk__show.active
+                                        span Подробнее
+                                        <svg width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.85291 1.76562L13.8529 11.7656L25.8529 1.76562" stroke="#3A3E46" stroke-width="2" stroke-linecap="round"/></svg>
+                            .order-lk__footer.active
+                                .order-lk__items
+                                    p.order-lk__delivery Самовывоз г. Курск, ТЦ Олимпийский,  ул. Дзержинского, д. 25
+                                    p.order-lk__pay Способ оплаты
+                                    p.order-lk__pay Онлайн оплата
+                                .order__item
+                                    .order__picture 
+                                        img(src="img/order/image27.png" alt="")
+                                    ul.order__item-list 
+                                        li.order__item-title
+                                            p Золотое кольцо с бриллиантом
+                                        li.order__article
+                                            p Артикул:&nbsp;
+                                            p 
+                                                span 123456
+                                        li
+                                            p Вес изделия:&nbsp;
+                                            p 
+                                                span 999 г
+                                        //- li
+                                        //-     p Размер&nbsp;
+                                        //-     p 
+                                        //-         span 22
+                                        li
+                                            p Вставка:&nbsp;
+                                            p 
+                                                span Бриллиант
+                        .order-lk 
+                            .order-lk__header 
+                                .order-lk__items
+                                    .order-lk__item
+                                        p Номер заказа
+                                        p.order-lk__value 999
+                                    .order-lk__item
+                                        p Дата заказа
+                                        p.order-lk__value 14.07.2021
+                                    .order-lk__item
+                                        p Стоимость
+                                        p.order-lk__value.order-lk__value--mode 9 999 ₽
+                                    .order-lk__item
+                                        p Статус заказа
+                                        p.order-lk__value.order-lk__value--mode Ожидает в магазине
+                                .order-lk__buttons
+                                    button.button 
+                                        span Повторить заказ
+                                    button.button.button--mode.order-lk__show 
+                                        span Подробнее
+                                        <svg width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.85291 1.76562L13.8529 11.7656L25.8529 1.76562" stroke="#3A3E46" stroke-width="2" stroke-linecap="round"/></svg>
+                            .order-lk__footer
+                                .order-lk__items
+                                    p.order-lk__delivery Самовывоз г. Курск, ТЦ Олимпийский,  ул. Дзержинского, д. 25
+                                    p.order-lk__pay Способ оплаты
+                                    p.order-lk__pay Онлайн оплата
+                                .order__item
+                                    .order__picture 
+                                        img(src="img/order/image27.png" alt="")
+                                    ul.order__item-list 
+                                        li.order__item-title
+                                            p Золотое кольцо с бриллиантом
+                                        li.order__article
+                                            p Артикул:&nbsp;
+                                            p 
+                                                span 123456
+                                        li
+                                            p Вес изделия:&nbsp;
+                                            p 
+                                                span 999 г
+                                        //- li
+                                        //-     p Размер&nbsp;
+                                        //-     p 
+                                        //-         span 22
+                                        li
+                                            p Вставка:&nbsp;
+                                            p 
+                                                span Бриллиант
+                        .order-lk 
+                            .order-lk__header 
+                                .order-lk__items
+                                    .order-lk__item
+                                        p Номер заказа
+                                        p.order-lk__value 999
+                                    .order-lk__item
+                                        p Дата заказа
+                                        p.order-lk__value 14.07.2021
+                                    .order-lk__item
+                                        p Стоимость
+                                        p.order-lk__value.order-lk__value--mode 9 999 ₽
+                                    .order-lk__item
+                                        p Статус заказа
+                                        p.order-lk__value.order-lk__value--mode Ожидает в магазине
+                                .order-lk__buttons
+                                    button.button 
+                                        span Повторить заказ
+                                    button.button.button--mode.order-lk__show 
+                                        span Подробнее
+                                        <svg width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.85291 1.76562L13.8529 11.7656L25.8529 1.76562" stroke="#3A3E46" stroke-width="2" stroke-linecap="round"/></svg>
+
+                            .order-lk__footer
+                                .order-lk__items
+                                    p.order-lk__delivery Самовывоз г. Курск, ТЦ Олимпийский,  ул. Дзержинского, д. 25
+                                    p.order-lk__pay Способ оплаты
+                                    p.order-lk__pay Онлайн оплата
+                                .order__item
+                                    .order__picture 
+                                        img(src="img/order/image27.png" alt="")
+                                    ul.order__item-list 
+                                        li.order__item-title
+                                            p Золотое кольцо с бриллиантом
+                                        li.order__article
+                                            p Артикул:&nbsp;
+                                            p 
+                                                span 123456
+                                        li
+                                            p Вес изделия:&nbsp;
+                                            p 
+                                                span 999 г
+                                        //- li
+                                        //-     p Размер&nbsp;
+                                        //-     p 
+                                        //-         span 22
+                                        li
+                                            p Вставка:&nbsp;
+                                            p 
+                                                span Бриллиант
+
+
+
+            include modules/decore-slide.pug
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="js/icon_customImage.js" type="text/javascript")

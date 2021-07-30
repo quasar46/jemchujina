@@ -1,0 +1,250 @@
+.basket-modal {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.basket-modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 60px 50px;
+  background-color: #fff;
+  max-width: 776px;
+  width: 100%;
+  position: absolute;
+  overflow: auto;
+  @media (max-width: 767px) {
+    padding: 40px 10px;
+  }
+}
+
+.basket-modal__title {
+  font-size: 22px;
+  margin-bottom: 37px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  @media (max-width: 767px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+.basket-modal__items {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.basket-modal__item {
+  position: relative;
+  display: none;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-grey;
+  padding: 20px 0;
+  .close-item {
+    align-self: center;
+    path {
+      fill: $color-grey;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  &.active {
+    display: flex;
+  }
+  &.show {
+    display: flex;
+  }
+  @media (max-width: 767px) {
+    padding: 5px 0;
+    padding-bottom: 30px;
+  }
+}
+
+.basket-modal__picture {
+  margin-right: 30px;
+  @media (max-width: 767px) {
+    max-width: 90px;
+    width: 100%;
+    flex: 1 0 auto;
+    margin-right: 25px;
+  }
+}
+
+.basket-modal__content {
+  & > div {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.basket-modal__item-count {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: start;
+  input {
+    max-width: 94px;
+    width: 100%;
+    flex: 1 0 auto;
+    height: 31px;
+    text-align: center;
+    border: 1px solid #cecbcb;
+    border-radius: 4px;
+    @media (max-width: 767px) {
+      max-width: 68px;
+      font-size: 12px;
+    }
+  }
+  button {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    &:first-child {
+      left: 10px;
+    }
+    &:last-child {
+      right: 10px;
+    }
+    svg {
+      width: 12px;
+      height: 12px;
+      @media (max-width: 767px) {
+        width: 9px;
+      }
+    }
+    @media (max-width: 767px) {
+      width: 9px;
+      height: 9px;
+    }
+  }
+  @media (max-width: 767px) {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+
+.basket-modal__minus {
+  background-image: url("../img/svg/minus.svg");
+}
+
+.basket-modal__plus {
+  background-image: url("../img/svg/plus.svg");
+}
+
+.basket-modal__text {
+  font-size: 16px;
+  margin-bottom: 10px;
+  @media (max-width: 767px) {
+    font-size: 10px;
+  }
+}
+
+.basket-modal__item-row {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.basket-modal__item-old-price {
+  color: $color-grey;
+  text-decoration: line-through;
+  @media (max-width: 767px) {
+    order: 1;
+    font-size: 14px;
+  }
+}
+
+.basket-modal__item-sale {
+  color: $color-orange;
+  @media (max-width: 767px) {
+    order: 0;
+    font-size: 14px;
+  }
+}
+
+.basket-modal__item-price {
+  @media (max-width: 767px) {
+    order: 2;
+    font-size: 14px;
+  }
+}
+
+.basket-modal__list {
+  margin-bottom: 60px;
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &:first-child {
+      color: $color-base-opacity;
+    }
+    &:nth-child(2) {
+      color: $color-base-opacity;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    font-size: 22px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.basket-modal__old-price {
+  text-decoration: line-through;
+}
+
+.basket-modal__sale {
+  color: $color-orange;
+}
+
+.basket-modal__button {
+  align-self: center;
+  @media (max-width: 1023px) {
+    font-size: 22px;
+    line-height: 46px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 33px;
+  }
+}
+
+.basket-modal__show {
+  display: none;
+  @media (max-width: 767px) {
+    align-self: center;
+    margin-top: 15px;
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+}

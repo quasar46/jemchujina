@@ -1,0 +1,77 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a О компании
+            section.about.container.inner
+                h2.title О компании
+                .about__wrapper.inner
+                    .about__aside 
+                        p.about__title Ювелирная сеть «Жемчужина»
+                        .about__content
+                            p Работа с сотнями поставщиков позволяет постоянно пополнять каталог новыми моделями дизайнеров страны. Изделия соответствуют качеству по отраслевому стандарту и прошли опробировку в Российской инспекции пробирного надзора РФ.
+                            p Основана в 2003 году, а сегодня это развитая сеть магазинов в 6 городах Черноземья. 17 лет мы предлагаем покупателям качественные изделия из драгоценных металлов российских производителей.
+                    .hero__picture
+                        img(src="img/about/image.png" alt="")
+                .about__wrapper.inner 
+                    img(src="img/about/image-2.png" alt="")
+                    .about__aside.about__aside--mode
+                        .about__content 
+                            p В магазинах представлены: обручальные кольца, иконы, ионизаторы, часы, столовое серебро, запонки, зажимы для галстуков, пирсинг, кольца, кулоны, серьги, браслеты, цепочки, колье, бусы, броши. Большие объёмы заказов позволяют нам получать дополнительные скидки от производителей и устанавливать для вас дополнительные скидки на изделия.
+                            p Поэтому цены в магазинах сети относятся к разряду «самых низких». Гибкая дисконтная система предоставляет дополнительные скидки постоянным покупателям и именинникам. Мы предлагаем: — Выгодные цены при обмене старого золота на новое изделие. — Ремонт ювелирных изделий,определение пробы и взвешивание. — Изготовление по нарядам. — Скупку лома ювелирных изделий по выгодным ценам.
+                        a(href="#").button В каталог
+
+            section.address.container.inner
+                h2.title Адреса магазинов
+                ul.address__list 
+                    li.address__list-item
+                        a.goto(data-goto='адрес-1')
+                            p г. Курск, ТЦ Линия, ул Энгельса, д. 70 10:00–21:00
+                            p +7 (4712) 33-08-50
+                    li.address__list-item
+                        a.goto(data-goto='адрес-2')
+                            p г. Курск, ТЦ Олимпийский, ул. Дзержинского, д. 25 10:00–19:00
+                            p +7 (4712) 73-60-00
+                    li.address__list-item
+                        a.goto(data-goto='адрес-3')
+                            p ТЦ Европа-20	г. Курск, пр-т Дружбы, д. 9А 09:00–21:00
+                            p +7 (905) 042-44-14
+                    li.address__list-item
+                        a.goto(data-goto='адрес-4')
+                            p ТЦ Пушкинский	г. Курск, ул. Ленина, д. 30 10:00–22:00
+                            p +7 (951) 087-97-49
+                    li.address__list-item
+                        a.goto(data-goto='адрес-5')
+                            p ТЦ Рынок	Курская обл., г. Курчатов, ул. Энергетиков, д. 60 10:00–18:00
+                            p +7 (951) 319-89-94
+                    li.address__list-item
+                        a.goto(data-goto='адрес-6')
+                            p ТЦ Линия	Курская обл., г. Железногорск,  ул. Воинов Интернационалистов, д. 18 09:00–20:00
+                            p +7 (930) 853-99-68
+
+                    button.button.address__button Показать еще 
+                        <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.28571 1.14286L8.14286 8L15 1.14286" stroke="#3A3E46" stroke-linecap="round"/></svg>
+
+                .address__map#map
+                #result
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="js/icon_customImage.js" type="text/javascript")

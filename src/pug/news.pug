@@ -1,0 +1,52 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Новости
+            section.news.container.container--mode.inner
+                h2.title Новости
+                .news__item
+                    .news__aside.news__aside--inner
+                        date.news__date.news__date--inner 31 февраля 2022
+                        p.news__title.news__title--inner ЗАГОЛОВОК НОВОСТИ
+                        .news__content.news__content--inner
+                            p Таким образом, понимание сути ресурсосберегающих технологий предоставляет широкие возможности для вывода текущих активов. Значимость этих проблем настолько очевидна, что убеждённость некоторых оппонентов говорит о возможностях благоприятных перспектив. 
+                            p Предварительные выводы неутешительны: консультация с широким активом предполагает независимые способы реализации поэтапного и последовательного развития общества. Являясь.
+
+                    img.news__picture(src="img/news/img.png" alt="")
+                .news__item
+                    .news__aside.news__aside--inner
+                        date.news__date.news__date--inner 31 февраля 2022
+                        p.news__title.news__title--inner ЗАГОЛОВОК НОВОСТИ
+                        .news__content.news__content--inner
+                            p Таким образом, понимание сути ресурсосберегающих технологий предоставляет широкие возможности для вывода текущих активов. Значимость этих проблем настолько очевидна, что убеждённость некоторых оппонентов говорит о возможностях благоприятных перспектив. 
+                            p Предварительные выводы неутешительны: консультация с широким активом предполагает независимые способы реализации поэтапного и последовательного развития общества. Являясь.
+
+                    img.news__picture(src="img/news/img2.png" alt="")
+                .news__item
+                    .news__aside.news__aside--inner
+                        date.news__date.news__date--inner 31 февраля 2022
+                        p.news__title.news__title--inner ЗАГОЛОВОК НОВОСТИ
+                        .news__content.news__content--inner
+                            p Таким образом, понимание сути ресурсосберегающих технологий предоставляет широкие возможности для вывода текущих активов. Значимость этих проблем настолько очевидна, что убеждённость некоторых оппонентов говорит о возможностях благоприятных перспектив. 
+                            p Предварительные выводы неутешительны: консультация с широким активом предполагает независимые способы реализации поэтапного и последовательного развития общества. Являясь.
+                    img.news__picture(src="img/news/img3.png" alt="")
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug

@@ -1,0 +1,228 @@
+.card {
+  display: flex;
+  margin-bottom: 90px;
+  @media (max-width: 1279px) {
+    margin-bottom: 70px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  &.container {
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+}
+
+.card__content {
+  max-width: 737px;
+  width: 100%;
+  flex: 1 0 auto;
+  padding-top: 40px;
+  @media (max-width: 1919px) {
+    max-width: 568px;
+  }
+  @media (max-width: 1365px) {
+    max-width: 525px;
+  }
+  @media (max-width: 1279px) {
+    max-width: 447px;
+  }
+  @media (max-width: 1023px) {
+    max-width: 318px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+    padding-top: 0;
+    max-width: 100%;
+  }
+}
+
+.card__slider {
+  display: flex;
+  @media (max-width: 1919px) {
+    flex-direction: column;
+  }
+}
+
+.card__slider-nav {
+  max-width: 180px;
+  margin-right: 47px;
+  margin-bottom: -30px;
+  .card__item {
+    height: 140px;
+    margin-bottom: 30px;
+    padding: 30px 25px;
+    border: 1px solid #f6d5cc;
+    opacity: 0.3;
+    @media (max-width: 1919px) {
+      height: 108px;
+      margin-right: 76px;
+    }
+    @media (max-width: 1365px) {
+      margin-right: 54px;
+      padding: 20px;
+    }
+    @media (max-width: 1279px) {
+      margin-right: 15px;
+    }
+    @media (max-width: 1023px) {
+      height: 78px;
+      padding: 15px;
+    }
+    &.opacity {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 1919px) {
+    max-width: 569px;
+    margin-right: -76px;
+    overflow: hidden;
+    order: 1;
+    .slick-list {
+      margin-right: -76px;
+      @media (max-width: 1365px) {
+        margin-right: -54px;
+      }
+      @media (max-width: 1279px) {
+        margin-right: -15px;
+      }
+    }
+  }
+  @media (max-width: 1365px) {
+    margin-right: 0;
+  }
+  @media (max-width: 767px) {
+    max-width: 320px;
+    align-self: center;
+  }
+}
+
+.card__slider-for {
+  border: 1px solid #f6d5cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 510px;
+  @media (max-width: 1919px) {
+    margin-bottom: 20px;
+    padding: 100px 0;
+    max-width: 568px;
+  }
+  @media (max-width: 1365px) {
+    padding: 90px 0;
+  }
+  @media (max-width: 1023px) {
+    padding: 55px 15px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 14px;
+    align-self: center;
+    max-width: 320px;
+  }
+}
+
+.card__big-picture {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.card__information {
+  margin-left: 138px;
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    @media (max-width: 1279px) {
+      font-size: 14px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 10px;
+      margin-bottom: 7px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 1919px) {
+    margin-left: 30px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 10px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card__sizes {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    padding: 10px 20px;
+    border: 1px solid #3a3e46;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &.disabled {
+      border: 1px solid #cecbcb;
+      color: $color-grey;
+    }
+    &.active,
+    &:hover {
+      background-color: $color-mint;
+      color: #fff;
+      border-color: $color-mint;
+      transition: all 0.3s;
+    }
+    @media (max-width: 1023px) {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+}
+
+.card__button {
+  margin-bottom: 50px;
+  @media (max-width: 1919px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    align-self: center;
+  }
+}
+
+.card__title {
+  font-size: 26px;
+  text-transform: uppercase;
+  line-height: 150%;
+  font-weight: 400;
+  .br {
+    display: block;
+  }
+  @media (max-width: 1279px) {
+    font-size: 22px;
+  }
+  @media (max-width: 1023px) {
+    font-size: 16px;
+  }
+  &--mode {
+    font-size: 22px;
+    @media (max-width: 1279px) {
+      font-size: 18px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 13px;
+    }
+  }
+}
+
+.card__note {
+  color: $color-grey;
+  line-height: 150%;
+}

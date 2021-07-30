@@ -1,0 +1,583 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Каталог
+            section.catalog.container.inner 
+                h2.title Каталог
+                .catalog__wrapper 
+                    .catalog__aside
+                        .catalog__aside-wrapper
+                            <svg class="close-modal" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.4552 6.48527L12.8437 1.11118C12.9502 0.987166 13.0058 0.827645 12.9995 0.664493C12.9932 0.501341 12.9254 0.346576 12.8096 0.231124C12.6939 0.115672 12.5387 0.048037 12.3751 0.0417352C12.2115 0.0354333 12.0515 0.0909288 11.9272 0.197131L6.5387 5.57122L1.1502 0.190648C1.02781 0.0685783 0.861799 0 0.688703 0C0.515607 0 0.349601 0.0685783 0.227203 0.190648C0.104806 0.312718 0.0360436 0.478281 0.0360436 0.650914C0.0360436 0.823547 0.104806 0.98911 0.227203 1.11118L5.6222 6.48527L0.227203 11.8594C0.15916 11.9175 0.103897 11.989 0.0648818 12.0694C0.0258666 12.1498 0.00394204 12.2374 0.000484374 12.3267C-0.0029733 12.416 0.0121103 12.505 0.0447887 12.5882C0.0774672 12.6714 0.127035 12.747 0.190381 12.8101C0.253726 12.8733 0.329482 12.9227 0.412893 12.9553C0.496305 12.9879 0.585571 13.003 0.675088 12.9995C0.764605 12.9961 0.852442 12.9742 0.933084 12.9353C1.01373 12.8964 1.08543 12.8413 1.1437 12.7734L6.5387 7.39932L11.9272 12.7734C12.0515 12.8796 12.2115 12.9351 12.3751 12.9288C12.5387 12.9225 12.6939 12.8549 12.8096 12.7394C12.9254 12.624 12.9932 12.4692 12.9995 12.306C13.0058 12.1429 12.9502 11.9834 12.8437 11.8594L7.4552 6.48527Z" fill="#3A3E46"/></svg>
+                            ul.catalog__aside-item.catalog__categories
+                                li.custom-checkbox
+                                    a.active Новинки 
+                                li.custom-checkbox
+                                    a Распродажа
+                                li.catalog__filter-clear.catalog__filter-clear--mode
+                                    a Очистить фильтр
+                            .catalog__aside-item.catalog__type 
+                                p.catalog__caption Тип изделия
+                                ul 
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-1" checked)
+                                        label(for="check-type-1") Кольца
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-2")
+                                        label(for="check-type-2") Серьги
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-3")
+                                        label(for="check-type-3") Подвески
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-4")
+                                        label(for="check-type-4") Цепи
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-5")
+                                        label(for="check-type-5") Колье
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-6")
+                                        label(for="check-type-6") Браслеты
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-7")
+                                        label(for="check-type-7") Бусы
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-8")
+                                        label(for="check-type-8") Броши
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-9")
+                                        label(for="check-type-9") Булавки
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-10")
+                                        label(for="check-type-10") Запонки
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-11")
+                                        label(for="check-type-11") Зажимы для галстука
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-12")
+                                        label(for="check-type-12") Пирсинг
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-13")
+                                        label(for="check-type-13") Часы
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-14")
+                                        label(for="check-type-14") Иконы
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-15")
+                                        label(for="check-type-15") Столовое серебро
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-16")
+                                        label(for="check-type-16") Сувениры
+                                    li.custom-checkbox
+                                        input(type="checkbox" id="check-type-17")
+                                        label(for="check-type-17") Подарочная упаковка
+
+                            .catalog__aside-item.catalog__slider 
+                                .catalog__caption 
+                                    p Цена
+                                .catalog__slide 
+                                .catalog__inputs    
+                                    input(type="text" placeholder="0")
+                                    input(type="text" placeholder="99999")
+
+                            .catalog__aside-item.catalog__toggle 
+                                .catalog__caption.toggle 
+                                    p Материал
+                                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 1L10 9L1 1" stroke="#3A3E46" stroke-linecap="round"/></svg>
+                                ul.toggleHide 
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-1")
+                                        label(for="check-toggle-1") Золото
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-2")
+                                        label(for="check-toggle-2") Серебро
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-3")
+                                        label(for="check-toggle-3") Позолота
+                            .catalog__aside-item.catalog__toggle 
+                                .catalog__caption.toggle 
+                                    p Цвет металла
+                                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 1L10 9L1 1" stroke="#3A3E46" stroke-linecap="round"/></svg>
+                                ul.toggleHide
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Белый
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-5")
+                                        label(for="check-toggle-5") Красный
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-6")
+                                        label(for="check-toggle-6") Лимонный
+
+                            .catalog__aside-item.catalog__toggle 
+                                .catalog__caption.toggle 
+                                    p Вставки
+                                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 1L10 9L1 1" stroke="#3A3E46" stroke-linecap="round"/></svg>
+                                ul.toggleHide 
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Бриллиант
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Изумруд
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Изумруд
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") Без вставки
+
+                            .catalog__aside-item.catalog__toggle 
+                                .catalog__caption.toggle 
+                                    p Размер кольца
+                                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 1L10 9L1 1" stroke="#3A3E46" stroke-linecap="round"/></svg>
+                                ul.toggleHide 
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 14,5
+
+
+                            .catalog__aside-item.catalog__toggle 
+                                .catalog__caption.toggle 
+                                    p Размер браслета
+                                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 1L10 9L1 1" stroke="#3A3E46" stroke-linecap="round"/></svg>
+                                ul.toggleHide 
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-4")
+                                        label(for="check-toggle-4") 16 см
+
+                            .catalog__aside-item.catalog__toggle 
+                                .catalog__caption.toggle 
+                                    p Комплект
+                                ul.toggleHide 
+                                    li.custom-checkbox 
+                                        input(type="checkbox" id="check-toggle-50")
+                                        label(for="check-toggle-4") Есть в наличии
+
+                            //- <svg class="menu__cross" id="closeCatalogAside" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.4552 6.48527L12.8437 1.11118C12.9502 0.987166 13.0058 0.827645 12.9995 0.664493C12.9932 0.501341 12.9254 0.346576 12.8096 0.231124C12.6939 0.115672 12.5387 0.048037 12.3751 0.0417352C12.2115 0.0354333 12.0515 0.0909288 11.9272 0.197131L6.5387 5.57122L1.1502 0.190648C1.02781 0.0685783 0.861799 0 0.688703 0C0.515607 0 0.349601 0.0685783 0.227203 0.190648C0.104806 0.312718 0.0360436 0.478281 0.0360436 0.650914C0.0360436 0.823547 0.104806 0.98911 0.227203 1.11118L5.6222 6.48527L0.227203 11.8594C0.15916 11.9175 0.103897 11.989 0.0648818 12.0694C0.0258666 12.1498 0.00394204 12.2374 0.000484374 12.3267C-0.0029733 12.416 0.0121103 12.505 0.0447887 12.5882C0.0774672 12.6714 0.127035 12.747 0.190381 12.8101C0.253726 12.8733 0.329482 12.9227 0.412893 12.9553C0.496305 12.9879 0.585571 13.003 0.675088 12.9995C0.764605 12.9961 0.852442 12.9742 0.933084 12.9353C1.01373 12.8964 1.08543 12.8413 1.1437 12.7734L6.5387 7.39932L11.9272 12.7734C12.0515 12.8796 12.2115 12.9351 12.3751 12.9288C12.5387 12.9225 12.6939 12.8549 12.8096 12.7394C12.9254 12.624 12.9932 12.4692 12.9995 12.306C13.0058 12.1429 12.9502 11.9834 12.8437 11.8594L7.4552 6.48527Z" fill="#3A3E46"></path></svg>
+
+                    .catalog__inner
+                        .catalog__filter 
+                            p Сортировать по:
+                            ul.catalog__filter-list 
+                                li.custom-checkbox 
+                                    a.active По популярности
+                                li.custom-checkbox 
+                                    a По новизне
+                                li.custom-checkbox 
+                                    a По возрастанию цены
+                                li.custom-checkbox 
+                                    a По убыванию цены
+
+                            .catalog__filter-clear 
+                                a Очистить фильтр
+
+
+                        .catalog__filter.catalog__filter--mode 
+                            .catalog__caption#catalog__caption-show 
+                                p Фильтр
+                                <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 0.833323L7 6.16666L1 0.833323" stroke="#3A3E46" stroke-linecap="round"/></svg>
+                            .catalog__select 
+                                select
+                                    option(value="Сортировать по новизне" selected) Сортировать по новизне
+                                    option(value="По популярности") По популярности
+                                    option(value="По новизне") По новизне
+                                    option(value="По возрастанию цены") По возрастанию цены
+                                    option(value="По убыванию цены") По убыванию цены
+                            .catalog__filter-clear 
+                                a Очистить фильтр
+                        ul.catalog__main 
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image2.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image3.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent.sale__percent--mode NEW
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image4.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image2.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image3.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image4.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image2.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image3.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image4.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image2.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image3.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image4.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image2.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image3.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image4.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+                            li.sale__item
+                                a.sale__link(href="") 
+                                    img.sale__picture(src="img/sale/image1.png" alt="")
+                                    p.sale__name Золотое кольцо с бриллиантом
+                                    .sale__price
+                                        span.sale__old-price 99999.99
+                                        span.sale__new-price 20 000 ₽
+                                    button.sale__link-button.button Купить
+                                    span.sale__percent &mdash; 20%
+
+
+            include modules/slideup.pug
+
+    include modules/footer.pug
+    include modules/menu.pug
+    include modules/script.pug

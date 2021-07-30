@@ -1,0 +1,105 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Скупка и обмен
+
+            section.exchange.container.inner
+                h2.title Скупка и обмен
+                .about__wrapper.about__wrapper--inner
+                    .about__aside 
+                        .about__content
+                            p В магазинах ювелирной сети «Фамильная Жемчужина» осуществляется скупка лома ювелирных изделий 375, 585, 750, 958 проб независимо от наличия на них пробирных клейм. Приём осуществляется у физических лиц, достигших совершеннолетия, при предъявлении паспорта гражданина РФ.
+                            p Принимаются в лом ювелирные изделия, бывшие в употреблении, без вставок, но не отходы производства. Принятые ценности после их оплаты возврату не подлежат. 
+                            p В магазинах сети «Фамильная Жемчужина» производится как скупка, так и обмен старых ювелирных изделий на новые по более выгодной цене.
+                        a(href="catalog.html").button В каталог 
+
+                    .hero__picture.hero__picture--inner.hero__picture--exchange
+                        img(src="img/about/image.png" alt="")
+            section.exchange.container.inner 
+                h2.visually-hidden Скупка золота
+                .exchange__wrapper
+                    a(href="#").exchange__item 
+                        .exchange__col 
+                            p Скупка 
+                            p Золота
+                            p 3480
+                                span &nbsp; руб/гр
+                        img(src="img/svg/exchange/img1.svg" alt="")
+                    a(href="#").exchange__item 
+                        .exchange__col 
+                            p Скупка 
+                            p Золота
+                            p 3223
+                                span &nbsp; руб/гр
+                        img(src="img/svg/exchange/img2.svg" alt="")
+
+            section.exchange-table.container.inner
+                h2.visually-hidden Таблица обмена
+                table.exchange-table__wrapper 
+                    tr.exchange-table__tr
+                        th.exchange-table__th Металл
+                        th.exchange-table__th Проба
+                        th.exchange-table__th Скупочная цена в рублях за 1 грамм
+                        th.exchange-table__th Скупочная цена в рублях за 1 грамм ОБМЕН
+                    tr.exchange-table__tr
+                        td.exchange-table__td золото
+                        td.exchange-table__td 333-375
+                        td.exchange-table__td 1550-00
+                        td.exchange-table__td 1620-00
+                    tr.exchange-table__tr
+                        td.exchange-table__td золото
+                        td.exchange-table__td 500
+                        td.exchange-table__td 2080-00
+                        td.exchange-table__td 2180-00
+                    tr.exchange-table__tr
+                        td.exchange-table__td золото
+                        td.exchange-table__td 583-585
+                        td.exchange-table__td 2450-00
+                        td.exchange-table__td 2550-00
+                    tr.exchange-table__tr
+                        td.exchange-table__td золото
+                        td.exchange-table__td 750
+                        td.exchange-table__td 2990-00
+                        td.exchange-table__td 3110-00
+                    tr.exchange-table__tr
+                        td.exchange-table__td золото
+                        td.exchange-table__td 916
+                        td.exchange-table__td 3430-00
+                        td.exchange-table__td 3560-00
+                    tr.exchange-table__tr
+                        td.exchange-table__td золото
+                        td.exchange-table__td 958
+                        td.exchange-table__td 3590-00
+                        td.exchange-table__td 3730-00
+                    tr.exchange-table__tr
+                        td.exchange-table__td золото
+                        td.exchange-table__td 999,9
+                        td.exchange-table__td 3720-00
+                        td.exchange-table__td 3880-00
+                    tr.exchange-table__tr
+                        td.exchange-table__td Золотые зубные коронки
+                        td.exchange-table__td 875
+                        td.exchange-table__td 3390-00
+                        td.exchange-table__td 3490-00
+
+
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug

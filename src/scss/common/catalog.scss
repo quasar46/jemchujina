@@ -1,0 +1,348 @@
+.catalog__wrapper {
+  display: flex;
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+}
+
+.catalog__caption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  p {
+    margin-right: 10px;
+  }
+  &.toggle {
+    cursor: pointer;
+  }
+  &.active {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.catalog__aside-wrapper {
+  .close-modal {
+    display: none;
+    @media (max-width: 1023px) {
+      display: block;
+    }
+  }
+}
+
+.catalog__aside {
+  max-width: 241px;
+  flex: 1 0 auto;
+  margin-right: 50px;
+  @media (max-width: 1365px) {
+    margin-right: 35px;
+  }
+  @media (max-width: 1279px) {
+    margin-right: 77px;
+  }
+  @media (max-width: 1023px) {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 100;
+    padding: 40px;
+    top: 0;
+    left: 0;
+    margin-right: 0;
+    max-width: 320px;
+  }
+  &.active {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    .catalog__aside-wrapper {
+      position: relative;
+      max-width: 320px;
+      background-color: #fff;
+      padding: 40px;
+      left: 0;
+      height: 100%;
+      overflow: auto;
+    }
+  }
+}
+
+.catalog__aside-item {
+  margin-bottom: 40px;
+  @media (max-width: 1023px) {
+    margin-bottom: 20px;
+  }
+}
+
+.catalog__categories,
+.catalog__type,
+.catalog__filter {
+  .custom-checkbox {
+    display: flex;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      &:checked + label {
+        background-color: $color-mint;
+        padding-left: 20px;
+        color: #fff;
+        transition: all 0.3s;
+        text-decoration: none;
+      }
+    }
+    label {
+      width: 100%;
+      line-height: 31px;
+    }
+  }
+}
+
+.catalog__categories {
+  .custom-checkbox {
+    padding-left: 0;
+    p,
+    a {
+      line-height: 31px;
+      color: $color-base-opacity;
+      width: 100%;
+      &.active {
+        background-color: $color-mint;
+        color: #fff;
+        padding: 0 20px;
+      }
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.catalog__filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  padding-left: 0 !important;
+  .custom-checkbox {
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
+    @media (max-width: 1919px) {
+      margin-right: 0;
+    }
+  }
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &:checked + label {
+      background-color: $color-mint;
+      padding-left: 20px;
+      color: #fff;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+  }
+  label {
+    width: 100%;
+    line-height: 31px;
+  }
+  @media (max-width: 1279px) {
+    display: none;
+  }
+  &--mode {
+    display: none;
+    .catalog__caption {
+      display: none;
+      margin-bottom: 0;
+      margin-right: 30px;
+      @media (max-width: 1023px) {
+        display: flex;
+        align-items: center;
+      }
+    }
+    @media (max-width: 1279px) {
+      display: flex;
+    }
+    @media (max-width: 767px) {
+      justify-content: space-between;
+    }
+  }
+  @media (max-width: 1365px) {
+    font-size: 13px;
+  }
+}
+
+.catalog__filter-list {
+  display: flex;
+  margin-left: 30px;
+  .custom-checkbox {
+    a {
+      font-size: 14px;
+      padding: 0 20px;
+      text-decoration: underline;
+      line-height: 31px;
+      @media (max-width: 1919px) {
+        padding: 0 15px;
+      }
+      @media (max-width: 1365px) {
+        font-size: 13px;
+      }
+      &.active {
+        background-color: $color-mint;
+        color: #fff;
+        text-decoration: none;
+      }
+      &:not(.active) {
+        &:hover {
+          color: $color-pink;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media (max-width: 1919px) {
+    margin-left: 20px;
+  }
+}
+.catalog__toggle {
+  .custom-checkbox {
+    display: flex;
+    // padding-left: 10px;
+    margin-bottom: 10px;
+
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      &:checked + label {
+        transition: all 0.3s;
+        &::before {
+          border: 4px solid #3a3e46;
+        }
+      }
+    }
+    label {
+      width: 100%;
+      line-height: 31px;
+      position: relative;
+      padding-left: 20px;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #cecbcb;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.catalog__slide {
+  margin-bottom: 25px;
+  height: 1px;
+  background-color: $color-base;
+}
+
+.catalog__inputs {
+  display: flex;
+  justify-content: space-between;
+  input {
+    line-height: 32px;
+    text-align: center;
+    width: calc(100% / 2 - 7px);
+  }
+}
+
+.catalog__filter-clear {
+  a {
+    color: $color-mint;
+    @media (max-width: 1279px) {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+  &--mode {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+}
+
+.catalog__inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+.catalog__main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  .sale__item {
+    margin: 0;
+  }
+  @media (max-width: 1919px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 1365px) {
+    grid-gap: 10px;
+  }
+  @media (max-width: 1279px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 55px;
+  }
+  @media (max-width: 767px) {
+    grid-gap: 15px 15px;
+    // margin-right: -15px;
+  }
+}
+
+.catalog__select {
+  margin-right: 40px;
+  font-size: 14px;
+  select {
+    font-size: 14px;
+    padding: 0 20px;
+    line-height: 31px;
+    background-color: $color-mint;
+    color: #fff;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    @media (max-width: 767px) {
+      padding: 0 10px;
+    }
+  }
+  option {
+    background-color: #fff;
+    color: $color-base;
+  }
+  @media (max-width: 767px) {
+    margin-right: 0;
+  }
+}

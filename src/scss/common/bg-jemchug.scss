@@ -1,0 +1,10 @@
+.bg-jemchug {
+  background-image: url("../img/bg/puziri.png");
+  background-size: 1164px auto;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  @media (max-width: 767px) {
+    background-image: url("../img/bg/puziri-mobile.png");
+    background-size: 275px auto;
+  }
+}

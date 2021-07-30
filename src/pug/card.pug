@@ -1,0 +1,326 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item
+                        a(href="catalog.html") Каталог
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Дисконтные Карты
+
+            section.card.container
+                //- h2.visually-hidden Карточка
+                .card__content 
+                    .card__slider
+                        .card__slider-nav
+                            .card__item
+                                img(src="img/card/image.png" alt="")
+                            .card__item
+                                img(src="img/card/image.png" alt="")
+                            .card__item
+                                img(src="img/card/image.png" alt="")
+                            .card__item
+                                img(src="img/card/image.png" alt="")
+                            .card__item
+                                img(src="img/card/image.png" alt="")
+                            .card__item
+                                img(src="img/card/image.png" alt="")
+                        .card__slider-for
+                            .card__big-picture
+                                img(src="img/card/big-image.png" alt="")
+                            .card__big-picture
+                                img(src="img/card/big-image.png" alt="")
+                            .card__big-picture
+                                img(src="img/card/big-image.png" alt="")
+                            .card__big-picture
+                                img(src="img/card/big-image.png" alt="")
+                            .card__big-picture
+                                img(src="img/card/big-image.png" alt="")
+                            .card__big-picture
+                                img(src="img/card/big-image.png" alt="")
+                .card__information
+                    p Артикул:
+                        span#card-article 123456
+                    h1.card__title Золотое кольцо <i class="br"></i> с бриллиантом
+                    p#card-price 99 999 &nbsp;
+                        span ₽
+                    p Размер
+                    ul.card__sizes 
+                        li.active
+                            span 14
+                        li
+                            span 14,5
+                        li
+                            span 15
+                        li
+                            span 15,5
+                        li
+                            span 16
+                        li
+                            span 16,5
+                        li
+                            span 17
+                        li
+                            span 17,5
+                        li
+                            span 18
+                        li
+                            span 18,5
+                        li
+                            span 19
+                        li
+                            span 19,5
+                        li.disabled
+                            span 20
+                        li.disabled
+                            span 20,5
+                        li.disabled
+                            span 21
+                        li.disabled
+                            span 21,5
+                        li.disabled
+                            span 22
+                        li.disabled
+                            span 22,5
+                        li.disabled
+                            span 23
+                        li.disabled
+                            span 23,5
+                        li.disabled
+                            span 24
+                        li.disabled
+                            span 24,5
+                        li.disabled
+                            span 25
+
+                    button.button.card__button Добавить в корзину
+
+                    .card__description 
+                        p.card__title.card__title--mode Описание
+                        p Бренд: &nbsp;
+                            span#card-brend Название бренда
+                        p Коллекция&nbsp;
+                            span#card-collection Название коллекции
+                        p Модель&nbsp;
+                            span#card-name 123456 Название
+                        p Вставка:&nbsp;
+                            span#card-vstavka Бриллиант
+                        p Золото 585 пробы
+                        p.card__note Иногда изделие может незначительно отличаться от представленного на фото и в описании
+                        p#card-weight Вес изделия&nbsp;
+                            span 999 &nbsp; г
+
+            section.card-row.container.inner
+                h2.card-row__title Дополните свой образ
+                ul.card-row__slider 
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image2.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image3.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image4.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить                   
+            section.card-row.container.inner 
+                h2.card-row__title Вам может понравиться
+                ul.card-row__slider 
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image2.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image3.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image4.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить                   
+            section.card-row.container.inner 
+                h2.card-row__title Недавно просмотренные
+                ul.card-row__slider 
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image2.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image3.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image4.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить                   
+
+
+
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+    include modules/footer.pug
+    include modules/menu.pug
+    include modules/script.pug

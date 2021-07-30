@@ -1,0 +1,72 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Доставка и оплата
+
+            section.exchange.container.inner
+                h1.title Доставка и оплата
+                .about__wrapper.about__wrapper--inner
+                    .about__aside 
+                        .about__content
+                            p В своём стремлении улучшить пользовательский опыт мы упускаем, что реплицированные с зарубежных источников, современные исследования неоднозначны и будут описаны максимально подробно. Лишь.
+                            p А ещё акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут заблокированы в рамках своих собственных рациональных ограничений. Имеется спорная точка.
+                        a(href="catalog.html").button В каталог 
+
+                    .hero__picture.hero__picture--inner
+                        img(src="img/about/image.png" alt="")
+
+            section.address.container.inner
+                h2.title Адреса магазинов
+                ul.address__list 
+                    li.address__list-item
+                        a.goto(data-goto='адрес-1')
+                            p г. Курск, ТЦ Линия, ул Энгельса, д. 70 10:00–21:00
+                            p +7 (4712) 33-08-50
+                    li.address__list-item
+                        a.goto(data-goto='адрес-2')
+                            p г. Курск, ТЦ Олимпийский, ул. Дзержинского, д. 25 10:00–19:00
+                            p +7 (4712) 73-60-00
+                    li.address__list-item
+                        a.goto(data-goto='адрес-3')
+                            p ТЦ Европа-20	г. Курск, пр-т Дружбы, д. 9А 09:00–21:00
+                            p +7 (905) 042-44-14
+                    li.address__list-item
+                        a.goto(data-goto='адрес-4')
+                            p ТЦ Пушкинский	г. Курск, ул. Ленина, д. 30 10:00–22:00
+                            p +7 (951) 087-97-49
+                    li.address__list-item
+                        a.goto(data-goto='адрес-5')
+                            p ТЦ Рынок	Курская обл., г. Курчатов, ул. Энергетиков, д. 60 10:00–18:00
+                            p +7 (951) 319-89-94
+                    li.address__list-item
+                        a.goto(data-goto='адрес-6')
+                            p ТЦ Линия	Курская обл., г. Железногорск,  ул. Воинов Интернационалистов, д. 18 09:00–20:00
+                            p +7 (930) 853-99-68
+
+                    button.button.address__button Показать еще 
+                        <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.28571 1.14286L8.14286 8L15 1.14286" stroke="#3A3E46" stroke-linecap="round"/></svg>
+
+                .address__map#map
+                #result
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="js/icon_customImage.js" type="text/javascript")

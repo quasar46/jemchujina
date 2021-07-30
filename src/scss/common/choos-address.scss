@@ -1,0 +1,143 @@
+.choos-address {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  max-width: 1200px;
+  width: 100%;
+  overflow-y: auto;
+
+  input {
+    border: 0;
+    border-bottom: 1px solid $color-grey;
+    margin-bottom: 30px;
+    padding: 5px 0;
+    width: 100%;
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: calc(100% / 2 - 15px);
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    &:nth-child(4) {
+      width: 50%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    &::placeholder {
+      color: $color-grey;
+    }
+    @media (max-width: 1023px) {
+      font-size: 12px;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
+  &.active {
+    display: flex;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding-bottom: 17px;
+    height: 550px;
+    max-width: 320px;
+  }
+}
+
+.choos-address__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choos-address__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.choos-address__inner {
+  width: 100%;
+  max-width: 385px;
+  padding: 70px 40px;
+  position: relative;
+  background-color: #fff;
+  @media (max-width: 767px) {
+    padding: 10px;
+    padding-top: 40px;
+  }
+}
+
+.choos-address__close {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  display: block;
+  right: 15px;
+  top: 15px;
+}
+
+.choos-address__title {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  @media (max-width: 1023px) {
+    font-size: 16px;
+  }
+}
+
+.choos-address__subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+  @media (max-width: 1023px) {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+.choos-address__button {
+  margin-top: 50px;
+  align-self: center;
+  @media (max-width: 1279px) {
+    margin: auto;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+  &--mode {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+}
+
+.choos-address__map {
+  // max-width: 815px;
+  width: 100%;
+  // flex: 1 0 auto;
+  .address__map {
+    height: 100%;
+  }
+  @media (max-width: 1279px) {
+    max-width: 640px;
+  }
+  @media (max-width: 767px) {
+    height: 167px;
+    margin-bottom: 30px;
+  }
+}
+
+#notice {
+  display: none;
+}

@@ -1,0 +1,54 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Личный кабинет
+            section.lk.container.inner
+                h2.title Личный кабинет
+                .lk__wrapper 
+                    ul.lk__list 
+                        li
+                            a(href="lk.html").active Профиль
+                        li
+                            a(href="lk2.html") Заказы
+                        li
+                            a(href="index.html") Выход
+                    .lk__content
+                        .lk__row
+                            h2.title-modal.lk__title Контакты
+                            .lk__inputs 
+                                input(type="text" placeholder="Имя")
+                                input(type="text" placeholder="Фамилия")
+                                input(type="text" placeholder="Телефон:")
+                                input(type="text" placeholder="Email")
+                                input(type="text" placeholder="Ваш город:")
+                        .lk__row
+                            h2.title-modal.lk__title Номер бонусной карты
+                            p 0000 0000 0000 0001
+                        .lk__row.lk__row--last
+                            h2.title-modal.lk__title Изменить пароль
+                            .lk__inputs
+                                input(type="text" placeholder="Введите новый пароль")
+                                input(type="text" placeholder="Повторите новый пароль")
+                        buttob.button.lk__button Сохранить изменения
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="js/icon_customImage.js" type="text/javascript")

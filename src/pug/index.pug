@@ -1,0 +1,284 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+            section.hero.container.inner
+                h2.visually-hidden Скиндки
+                .hero__wrapper.hero-slick
+                    .hero__slick
+                        .hero__item
+                            .hero__caption
+                                p.hero__title Cкидки <i class="br"></i> на бриллианты
+                                p.hero__subtitle Из новой коллекции SHINE DIAMONDS
+                                a(href="#").button Подробнее
+                            .hero__picture
+                                img(src="img/hero/pexels-elina-sazonova-19272641.jpg" alt="")
+                    .hero__slick
+                        .hero__item
+                            .hero__caption
+                                p.hero__title Cкидки <i class="br"></i> на бриллианты
+                                p.hero__subtitle Из новой коллекции SHINE DIAMONDS
+                                a(href="#").button Подробнее
+                            .hero__picture
+                                img(src="img/hero/pexels-elina-sazonova-19272641.jpg" alt="")
+                    .hero__slick
+                        .hero__item
+                            .hero__caption
+                                p.hero__title Cкидки <i class="br"></i> на бриллианты
+                                p.hero__subtitle Из новой коллекции SHINE DIAMONDS
+                                a(href="#").button Подробнее
+                            .hero__picture
+                                img(src="img/hero/pexels-elina-sazonova-19272641.jpg" alt="")
+                    .hero__slick
+                        .hero__item
+                            .hero__caption
+                                p.hero__title Cкидки <i class="br"></i> на бриллианты
+                                p.hero__subtitle Из новой коллекции SHINE DIAMONDS
+                                a(href="#").button Подробнее
+                            .hero__picture
+                                img(src="img/hero/pexels-elina-sazonova-19272641.jpg" alt="")
+                button.hero__write-us#feedback-btn
+                    span Напишите нам
+
+                //- .slick__arrows
+                //-     .slick__prev.hero__prev
+                //-     .slick__center-dot
+                //-     .slick__next.hero__next
+                include modules/decore.pug
+
+            section.catalog-inner.container.inner
+                .catalog-inner__wrapper 
+                    h2.title Каталог
+                    ul.catalog-inner__list.catalog-inner-slick
+                        li.catalog-inner__item
+                            a.catalog-inner__link(href="") 
+                                .catalog-inner__caption
+                                    p.catalog-inner__name Украшение
+                                    p.catalog-inner__description С бриллиантами
+                                img.catalog-inner__picture.catalog-inner__picture--1(src="img/catalog/image15.png" alt="")
+                        li.catalog-inner__item
+                            a.catalog-inner__link(href="") 
+                                .catalog-inner__caption
+                                    p.catalog-inner__name Новая коллекция
+                                    p.catalog-inner__description Серьги
+                                img.catalog-inner__picture.catalog-inner__picture--2(src="img/catalog/image16.png" alt="")
+                        li.catalog-inner__item
+                            a.catalog-inner__link(href="") 
+                                .catalog-inner__caption
+                                    p.catalog-inner__name Браслеты
+                                    p.catalog-inner__description Из белого золота
+                                img.catalog-inner__picture.catalog-inner__picture--3(src="img/catalog/image17.png" alt="")
+                        li.catalog-inner__item
+                            a.catalog-inner__link(href="") 
+                                .catalog-inner__caption
+                                    p.catalog-inner__name Восхитительные
+                                    p.catalog-inner__description Комплекты
+                                img.catalog-inner__picture.catalog-inner__picture--4(src="img/catalog/image20.png" alt="")
+                        li.catalog-inner__item
+                            a.catalog-inner__link(href="") 
+                                .catalog-inner__caption
+                                    p.catalog-inner__name Уникальные
+                                    p.catalog-inner__description Броши
+                                img.catalog-inner__picture.catalog-inner__picture--5(src="img/catalog/image21.png" alt="")
+                        li.catalog-inner__item
+                            a.catalog-inner__link(href="") 
+                                .catalog-inner__caption
+                                    p.catalog-inner__name Лучшее предложение
+                                    p.catalog-inner__description Обручальные кольца
+                                img.catalog-inner__picture.catalog-inner__picture--6(src="img/catalog/image22.png" alt="")
+
+                    a(href="#").button.catalog-inner__button Смотреть все
+
+            section.new-products.container.inner
+                h2.title Новинки
+                .new-products__wrapper
+                    .new-products__aside
+                        a(href="#").new-products__item.new-products__item--1
+                            p Название
+                            p коллекции
+                        a(href="#").new-products__item.new-products__item--2
+                            p Название
+                            p коллекции
+                    a(href="#").new-products__item.new-products__item--3
+                        p Название
+                        p коллекции
+                .new-products__list.new-products-slick
+                    a(href="#").new-products__item.new-products__item--1
+                        p Название <br>
+                        p коллекции
+                    a(href="#").new-products__item.new-products__item--2
+                        p Название <br>
+                        p коллекции
+                    a(href="#").new-products__item.new-products__item--3
+                        p Название <br>
+                        p коллекции
+
+                a(href="catalog.html").button.new-products__button Все новинки
+
+            section.sale.container.inner 
+                h2.title Распродажа
+                ul.sale__list.sale-slick
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image2.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image3.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image4.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+                    li.sale__item
+                        a.sale__link(href="") 
+                            img.sale__picture(src="img/sale/image1.png" alt="")
+                            p.sale__name Золотое кольцо с бриллиантом
+                            .sale__price
+                                span.sale__old-price 99999.99
+                                span.sale__new-price 20 000 ₽
+                            button.sale__link-button.button Купить
+                        span.sale__percent &mdash; 20%
+
+                a(href="catalog.html").button.sale__button Посмотреть все
+
+            section.bonus.container.inner
+                h2.title Бонусная программа
+                .bonus__wrapper
+                    a(href="#").bonus__item.bonus__item--1
+                        img(src="img/bonus/image1.png" alt="")
+                        .bonus__text
+                            p ПОДАРОЧНЫЙ
+                            p СЕРТИФИКАТ
+                            p.bonus__description осуществите самые заветные желания <i class="br"></i> дорогого человека
+                    .bonus__footer
+                        a(href="#").bonus__item.bonus__item--2
+                            .bonus__text
+                                p Дисконтные
+                                p Карты
+                                p.bonus__description для наших любимых покупателей
+                            img(src="img/bonus/image2.png" alt="")
+                        a(href="#").bonus__item.bonus__item--3
+                            .bonus__text
+                                p ОБРУЧАЛЬНЫЕ
+                                p КОЛЬЦА
+                                .bonus__price 
+                                    span 3480
+                                    span руб/гр
+                            img(src="img/bonus/image3.png" alt="")
+                .bonus__list.bonus-slick
+                    a(href="#").bonus__item.bonus__item--1
+                        img(src="img/bonus/image1.png" alt="")
+                        .bonus__text
+                            p ПОДАРОЧНЫЙ
+                            p СЕРТИФИКАТ
+                            p.bonus__description осуществите самые заветные желания дорогого человека
+                    a(href="#").bonus__item.bonus__item--2
+                        img(src="img/bonus/image2.png" alt="")
+                        .bonus__text
+                            p Дисконтные
+                            p Карты
+                            p.bonus__description для наших любимых покупателей
+                    a(href="#").bonus__item.bonus__item--3
+                        .bonus__text
+                            p ОБРУЧАЛЬНЫЕ
+                            p КОЛЬЦА
+                            .bonus__price 
+                                span 3480
+                                span руб/гр
+                        img(src="img/bonus/image3.png" alt="")
+
+            section.jewelry.container.inner 
+                .jewelry__wrapper 
+                    .jewelry__picture
+                        img(src="img/jewelry/img.jpg" alt="")
+                    .jewelry__content 
+                        h2.title.jewelry__title Ювелирная сеть «Жемчужина»
+                        p Основана в 2003 году, а сегодня это развитая сеть магазинов в 6 городах Черноземья. 17 лет мы предлагаем покупателям качественные изделия из драгоценных металлов российских производителей.
+                        a(href="#").button.jewelry__button Подробнее
+
+            section.news.container.inner 
+                h2.title Новости
+                .news__wrapper.news-slick
+                    .news__slick-item
+                        .news__item
+                            .news__aside 
+                                date.news__date 31 февраля 2022
+                                p.news__title ЗАГОЛОВОК НОВОСТИ
+                                .news__content
+                                    p Таким образом, понимание сути ресурсосберегающих технологий предоставляет широкие возможности для вывода текущих активов. Значимость этих проблем настолько очевидна, что убеждённость некоторых оппонентов говорит о возможностях благоприятных перспектив. 
+                                    p Предварительные выводы неутешительны: консультация с широким активом предполагает независимые способы реализации поэтапного и последовательного развития общества. Являясь.
+                                a(href="news.html").button.news__button Все новости
+                            img(src="img/news/img.jpg" alt="")
+                    .news__slick-item
+                        .news__item
+                            .news__aside 
+                                date.news__date 31 февраля 2022
+                                p.news__title ЗАГОЛОВОК НОВОСТИ
+                                .news__content
+                                    p Таким образом, понимание сути ресурсосберегающих технологий предоставляет широкие возможности для вывода текущих активов. Значимость этих проблем настолько очевидна, что убеждённость некоторых оппонентов говорит о возможностях благоприятных перспектив. 
+                                    p Предварительные выводы неутешительны: консультация с широким активом предполагает независимые способы реализации поэтапного и последовательного развития общества. Являясь.
+                                a(href="#").button.news__button Все новости
+                            img(src="img/news/img.jpg" alt="")
+                    .news__slick-item
+                        .news__item
+                            .news__aside 
+                                date.news__date 31 февраля 2022
+                                p.news__title ЗАГОЛОВОК НОВОСТИ
+                                .news__content
+                                    p Таким образом, понимание сути ресурсосберегающих технологий предоставляет широкие возможности для вывода текущих активов. Значимость этих проблем настолько очевидна, что убеждённость некоторых оппонентов говорит о возможностях благоприятных перспектив. 
+                                    p Предварительные выводы неутешительны: консультация с широким активом предполагает независимые способы реализации поэтапного и последовательного развития общества. Являясь.
+                                a(href="#").button.news__button Все новости
+                            img(src="img/news/img.jpg" alt="")
+                a(href="#").button.news__button.news__button--mode Все новости
+                //- .slick__arrows
+                //-     .slick__prev.news__prev
+                //-     .slick__center-dot
+                //-     .slick__next.news__next
+            include modules/decore-slide.pug
+
+            //- include modules/slideup.pug
+
+        include modules/footer.pug
+        include modules/order-finish.pug
+        include modules/register.pug
+        include modules/login.pug
+        include modules/basket-modal.pug
+        include modules/feedback.pug
+        include modules/menu.pug
+        include modules/script.pug
+        script(src="js/feedback.js" type="text/javascript")

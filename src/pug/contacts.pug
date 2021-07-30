@@ -1,0 +1,112 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Контакты
+
+            include modules/contacts-map.pug
+
+            section.requisites.container.inner
+                .requisites__wrapper
+                    .requisites__title.toggle
+                        h3.subtitle Реквизиты компании
+                        <svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.99805 16L17.498 2L32.998 16" stroke="#3A3E46" stroke-width="2" stroke-linecap="round"/></svg>
+                    .requisites__content.toggleHide
+                        .requisites__aside
+                            .requisites__item
+                                p.requisites__caption жемчужина
+                                ul 
+                                    li
+                                        p Улица Пушкина, д. Колотушкина, г. Курск, 123456
+                                    li
+                                        p +7 (999) 999-99-99
+                                    li
+                                        p Время работы: пн-пт: 9:00–18:00 сб-вс: выходной
+                                    li
+                                        p mail@mail.su
+                            .requisites__item 
+                                p.requisites__caption Служба клиентской поддержки
+                                ul 
+                                    li
+                                        p 8 (800) 555-35-35 (бесплатный звонок по всей России)
+                                    li
+                                        p Время работы:
+                                    li
+                                        p пн-вс: 8:00–20:00
+                                    li
+                                        p support@mail.ru
+                                    li
+                                        p *Звонок платный. <i class="br"></i> Стоимость уточняйте у своего оператора.
+                        .requisites__aside
+                            p.requisites__caption Реквизиты
+                            ul.requisites__inner.requisites__item
+                                li
+                                    p Полное наименование
+                                li
+                                    p Акционерное общество «ИП ООО»
+                                li
+                                    p Сокращённое наименование
+                                li
+                                    p AО «ИП ООО»
+                                li
+                                    p Директор
+                                li
+                                    p ФИО
+                                li
+                                    p Банк
+                                li
+                                    p Публичное акционерное общество «Сбербанк России» ПАО Сбербанк г. Москва
+                                li
+                                    p Корреспондентский счёт
+                                li
+                                    p 1546321654654651651685
+                                li
+                                    p БИК
+                                li
+                                    p 1654654165465
+                                li
+                                    p Расчётный счёт
+                                li
+                                    p 1544565468464654
+                                li
+                                    p ИНН
+                                li
+                                    p 546845462465429841
+                                li
+                                    p КПП
+                                li
+                                    p 654154185419
+                                li
+                                    p ОГРН
+                                li
+                                    p 54168546841
+                                li
+                                    p Юридический адрес
+                                li
+                                    p РФ, 123456, г. Курск, Улица Пушкина, д. Колотушкина, офис 222
+                                li
+                                    p Фактический адрес
+                                li
+                                    p РФ, 123456, г. Курск, Улица Пушкина, д. Колотушкина, офис 222
+
+
+
+            include modules/decore-slide.pug
+            //- include modules/slideup.pug
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src="js/icon_customImage.js" type="text/javascript")

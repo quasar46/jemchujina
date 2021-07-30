@@ -1,0 +1,50 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+
+            section.breadcrumbs.container
+                h2.visually-hidden Хлебные крошки
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item 
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item 
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.5L5 5L1 9.5" stroke="#CECBCB" stroke-linecap="round"/></svg>
+                    li.breadcrumbs__item.active
+                        a Акции
+            section.stocks.container.container--mode.inner
+                h2.title Акции
+                ul.stocks__list
+                    li.stocks__item
+                        .stocks__aside
+                            p.stocks__title Название коллекции
+                            .stocks__content
+                                p Текст описания коллекции, понимание сути ресурсосберегающих технологий создаёт предпосылки для поэтапного и последовательного развития общества. Лишь элементы политического процесса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть представлены в исключительно положительном свете. Не следует, однако, забывать, что качество.
+                            a(href="catalog.html").button.stocks__button В каталог
+                        .stocks__picture 
+                            img(src="img/stocks/rectangle91.png" alt="")
+                    li.stocks__item
+                        .stocks__aside
+                            p.stocks__title Название коллекции
+                            .stocks__content
+                                p Текст описания коллекции, понимание сути ресурсосберегающих технологий создаёт предпосылки для поэтапного и последовательного развития общества. Лишь элементы политического процесса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть представлены в исключительно положительном свете. Не следует, однако, забывать, что качество.
+                            a(href="catalog.html").button.stocks__button В каталог
+                        .stocks__picture 
+                            img(src="img/stocks/rectangle89.png" alt="")
+                    li.stocks__item
+                        .stocks__aside
+                            p.stocks__title Название коллекции
+                            .stocks__content
+                                p Текст описания коллекции, понимание сути ресурсосберегающих технологий создаёт предпосылки для поэтапного и последовательного развития общества. Лишь элементы политического процесса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть представлены в исключительно положительном свете. Не следует, однако, забывать, что качество.
+                            a(href="catalog.html").button.stocks__button В каталог
+                        .stocks__picture 
+                            img(src="img/stocks/rectangle90.png" alt="")
+
+
+            include modules/decore-slide.pug
+
+        include modules/footer.pug
+        include modules/menu.pug
+        include modules/script.pug

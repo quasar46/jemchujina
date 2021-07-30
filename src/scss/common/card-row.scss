@@ -1,0 +1,27 @@
+.card-row__title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  @media (max-width: 1365px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 767px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+.card-row__slider {
+  margin-bottom: 80px;
+  .slick-list {
+    @media (max-width: 1023px) {
+      margin-right: -150px;
+    }
+
+    @media (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+}

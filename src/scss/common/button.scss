@@ -1,0 +1,46 @@
+.button {
+  display: block;
+  align-self: start;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 46px;
+  padding: 0 70px;
+  background-color: transparent;
+  border: 1px solid $color-base;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  @media (max-width: 1919px) {
+    font-size: 18px;
+    line-height: 41px;
+  }
+  @media (max-width: 1279px) {
+    line-height: 37px;
+    padding: 0 55px;
+  }
+  @media (max-width: 1023px) {
+    font-size: 14px;
+    padding: 0 40px;
+    line-height: 29px;
+  }
+  @media (max-width: 767px) {
+    align-self: center;
+    line-height: 33px;
+    padding: 0 55px;
+  }
+  &:hover {
+    @media (min-width: 321px) {
+      color: #fff;
+      background-color: $color-mint;
+      border-color: $color-mint;
+      transition: all 0.3s;
+    }
+  }
+  &--mode {
+    &:hover {
+      background-color: #fff;
+      border-color: $color-base;
+      color: $color-base;
+    }
+  }
+}
